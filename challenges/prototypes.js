@@ -5,10 +5,10 @@
 /* == Step 1: Base Constructor ==
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
-function CuboidMaker(length, width, height) {
-  this.length = length,
-  this.width = width,
-  this.height = height
+function CuboidMaker(properties) {
+  this.length = properties.length,
+  this.width = properties.width,
+  this.height = properties.height
 }
 
 /* == Step 2: Volume Method ==
@@ -39,7 +39,8 @@ const cuboid = new CuboidMaker ({
   height: 5
 });
 // Test your volume and surfaceArea methods by uncommenting the logs below:
-//console.log(cuboid.volume()); // 100
-//console.log(cuboid.surfaceArea()); // 130
-
-//Worked perfectly fine before copying and pasting but now returns NaN
+console.log(cuboid.volume()); // 100
+//console.log(`Wrong`);
+console.log(cuboid.surfaceArea()); // 130
+//console.log(`Wrong`);
+// Worked perfectly fine before copying and pasting but now returns NaN
