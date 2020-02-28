@@ -96,6 +96,7 @@ for(let i = 0; i < graduates.length; i++) {
   }
 }
 console.log(unisWithUni);
+// Logic seems correct but returns empty array
 
 
 // ==== ADVANCED Array Methods ====
@@ -160,7 +161,7 @@ zooAnimals.reduce(function(populationTotal, value){;
   populationTotal + value.population;
 })
 console.log(populationTotal);  
-
+// Logic seems correct but returns 0
 
 /*
 
